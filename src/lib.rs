@@ -4,3 +4,6 @@
 
 #[cfg(all(target_arch = "x86_64", target_os = "linux"))]
 include!("./bindings_x86_64_unknown_linux_gnu.rs");
+
+#[cfg(all(target_arch = "x86_64", target_os = "windows"))]
+include!("./bindings_x86_64_pc_windows_msvc.rs");
